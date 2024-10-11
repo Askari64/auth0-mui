@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom"
 
-import SignIn from "./components/sign-in/SignIn"
+import SignIn from "./components/Sign-in/Signin"
 import SignUp from "./components/sign-up/SignUp"
+import Callback from "../utility/Callback"
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <Routes>
       <Route path="/" element={<SignIn/>} />
       <Route path="/signup" element={<SignUp/>} />
+      <Route path="/callback" element={<Callback />} />
     </Routes>
   )
 }
